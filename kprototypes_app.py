@@ -4,6 +4,8 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 from kmodes.kprototypes import KPrototypes
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import silhouette_score, calinski_harabasz_score
 
 st.set_page_config(page_title="KPrototypes 用户画像分析", page_icon="", layout="wide")
 
